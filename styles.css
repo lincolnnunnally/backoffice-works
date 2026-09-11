@@ -137,6 +137,7 @@ nav a:hover { color: var(--navy); }
   font-weight: 700;
   margin: 0 0 0.75rem;
   color: var(--navy);
+  max-width: 100%;
 }
 .kicker-ink { color: var(--navy); }
 h1 {
@@ -166,7 +167,7 @@ h1 {
   letter-spacing: 0.02em;
 }
 
-.hero-visual { position: relative; }
+.hero-visual { position: relative; padding-bottom: 1.2rem; }
 .hero-photo {
   width: 100%;
   height: 22rem;
@@ -179,7 +180,7 @@ h1 {
   position: absolute;
   left: 4%;
   right: 18%;
-  bottom: -1.6rem;
+  bottom: 1.7rem;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -255,7 +256,7 @@ h1 {
 }
 .app-aim b:last-child { color: var(--aim); }
 .caption {
-  margin: 2.1rem 0 0;
+  margin: 0.35rem 0 0;
   font-size: 0.78rem;
   color: #6b7789;
 }
@@ -292,6 +293,7 @@ h3 {
   overflow: hidden;
   box-shadow: 0 10px 28px -22px rgba(14, 28, 48, 0.4);
 }
+.shot { transition: transform 0.15s ease, border-color 0.15s ease; }
 .shot:hover { border-color: #b9c7d8; transform: translateY(-2px); }
 .browser {
   background: #e8eef4;
@@ -439,6 +441,7 @@ footer {
   .hero-photo, .feature-grid img, .form-grid img { height: 16.5rem; }
   .app-window { position: relative; left: auto; right: auto; bottom: auto; margin-top: -2.4rem; }
   .caption { margin-top: 0.7rem; }
+  .cta-row .btn { margin-left: 0; }
   .shot-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
@@ -446,4 +449,6 @@ footer {
   .aim { grid-template-columns: 1fr; }
   .shot-grid { grid-template-columns: 1fr; }
   .app-body { grid-template-columns: 5.6rem 1fr; }
+  .kicker { letter-spacing: 0.08em; }
+  .cta-row .btn { flex: 1 1 12rem; text-align: center; }
 }
