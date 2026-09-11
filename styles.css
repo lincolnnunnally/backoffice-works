@@ -120,7 +120,7 @@ nav a:hover { color: var(--navy); }
   background:
     radial-gradient(1200px 420px at 80% -10%, rgba(30, 74, 115, 0.12), transparent 60%),
     #fff;
-  padding: 3.2rem 0 2.4rem;
+  padding: 3.2rem 0 3.4rem;
   border-bottom: 1px solid var(--line);
 }
 .hero-grid {
@@ -167,7 +167,7 @@ h1 {
   letter-spacing: 0.02em;
 }
 
-.hero-visual { position: relative; padding-bottom: 1.2rem; }
+.hero-visual { position: relative; }
 .hero-photo {
   width: 100%;
   height: 22rem;
@@ -180,7 +180,7 @@ h1 {
   position: absolute;
   left: 4%;
   right: 18%;
-  bottom: 1.7rem;
+  bottom: -1.35rem;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -255,10 +255,13 @@ h1 {
   color: var(--muted);
 }
 .app-aim b:last-child { color: var(--aim); }
-.caption {
-  margin: 0.35rem 0 0;
-  font-size: 0.78rem;
+.app-foot {
+  margin: 0;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.68rem;
   color: #6b7789;
+  background: #f4f6f9;
+  border-top: 1px solid var(--line);
 }
 
 section { padding: 4.2rem 0; }
@@ -440,7 +443,6 @@ footer {
   .feature-alt .feature-grid img { order: 0; }
   .hero-photo, .feature-grid img, .form-grid img { height: 16.5rem; }
   .app-window { position: relative; left: auto; right: auto; bottom: auto; margin-top: -2.4rem; }
-  .caption { margin-top: 0.7rem; }
   .cta-row .btn { margin-left: 0; }
   .shot-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -449,6 +451,7 @@ footer {
   .aim { grid-template-columns: 1fr; }
   .shot-grid { grid-template-columns: 1fr; }
   .app-body { grid-template-columns: 5.6rem 1fr; }
-  .kicker { letter-spacing: 0.08em; }
-  .cta-row .btn { flex: 1 1 12rem; text-align: center; }
+  .kicker { display: block; letter-spacing: 0.08em; }
+  .cta-row { flex-direction: column; }
+  .cta-row .btn { width: 100%; text-align: center; }
 }
